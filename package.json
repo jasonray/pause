@@ -1,0 +1,22 @@
+{
+  "name": "pause",
+  "version": "0.0.1",
+  "description": "I often need a web service to simulate a remote resource that takes an arbitrary amount of time to execute. This is such a service",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jasonray/pause.git"
+  },
+  "author": "j.ray",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/jasonray/pause/issues"
+  },
+  "dependencies": {
+    "express": "~4.0.0",
+    "morgan": "~1.0.0"
+  }
+}
