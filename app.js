@@ -1,19 +1,28 @@
+var pargv = require('minimist')(process.argv.splice(2));
+
+var httpPort = pargv.p || 8888;
+var defaultDelay = pargv.d || 1000;
+var defaultEcho = pargv.e || '';
+var defaultStatus = pargv.s || 200;
+
 var express = require('express');
 var app = express();
-var httpPort = 8888;
 
-var morganLogger = require('morgan')('dev');
 
 // log the request to stdout
+var morganLogger = require('morgan')('dev');
 app.use(morganLogger);
 
 // this would represent an expensive resource with 2000ms latency
 app.get('/', function(req, res, next) {
-	// logger.info('begin resource processing, fetch data which will take 1s');
+	var delay = req.query.d || defaultDelay;
+	var echo = req.query.echo || defaultEcho;
+	var result = req.query.echo || 'de';
+	console.log('delay=%s; result=%s', delay, result);
 	setTimeout(function() {
 		// logger.info('end fetch data');
-		res.end('retrieved data \n');
-	}, 2000);
+		res.end(result);
+	}, defaultDelay);
 });
 
 app.listen(httpPort, function() {
