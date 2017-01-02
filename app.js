@@ -8,12 +8,14 @@ var defaultResponseHttpStatus = pargv.s || 202;
 var express = require('express');
 var app = express();
 
-
 // log the request to stdout
 var morganLogger = require('morgan')('dev');
 app.use(morganLogger);
 
-// this would represent an expensive resource with 2000ms latency
+console.log('default delay set to ' + defaultDelay);
+console.log('default content to ' + defaultContent);
+
+// this would represent an expensive resource with latency
 app.get('/', function(req, res, next) {
 	var delay = req.query.delay || defaultDelay;
 	var responseContent = req.query.content || defaultContent;
