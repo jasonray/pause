@@ -42,6 +42,6 @@ Transfer-Encoding: chunked
 ```
 
 Query params that you can use on the request:
-`delay` specify the duration, in milliseconds, for the service to wait before returning
-`content` specify the content to use on the response http body
-`status` specify the http status to use on the response
+- `delay` specify the duration, in milliseconds, for the service to wait before returning
+- `content` specify the content to use on the response http body
+- `status` specify the http status to use on the response
