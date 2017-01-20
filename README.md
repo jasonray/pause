@@ -1,14 +1,10 @@
-Pause [![Build Status](https://travis-ci.org/jasonray/pause.svg?branch=master)](https://travis-ci.org/jasonray/pause)
------
+# Pause [![Build Status](https://travis-ci.org/jasonray/pause.svg?branch=master)](https://travis-ci.org/jasonray/pause)
 
-Purpose
-=======
-
+# Purpose
 I often need a mock web service to simulate a remote resource that takes an arbitrary amount of time to execute.  This is often used while performance testing to represent a remote web service.  This project provides such a mock.
 
 
-Install it
-==========
+# Install it
 Install node:
 ```
 brew install node
@@ -19,21 +15,18 @@ Install node dependencies
 npm install 
 ```
 
-Run it
-======
+# Run it
 ```
 node app.js [options]
 ```
 
-Options
--------
+## Options
 `-p port` specify the port on which to listen
 `-d delay` specify the default duration, in milliseconds, for the service to wait before returning
 `-c content` specify the default content to use on the response http body
 `-s status` specify the default http status to use on the response
 
-Consume it
-==========
+# Consume it
 A simple usage of it would be:
 ```
 > curl -i http://127.0.0.1:8888
