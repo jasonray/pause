@@ -1,3 +1,5 @@
+console.log('starting pause');
+
 var pargv = require('minimist')(process.argv.splice(2));
 
 var httpPort = pargv.p || 80;
