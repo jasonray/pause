@@ -1,5 +1,6 @@
 console.log('starting pause');
 console.log(process.argv);
+console.log('version: ' + process.env.npm_package_version);
 
 var pargv = require('minimist')(process.argv.splice(2));
 

@@ -1,1 +1,1 @@
-web: node app.js -c helloworld1
+web: npm start -- -c helloworld1
