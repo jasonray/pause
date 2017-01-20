@@ -1,8 +1,9 @@
 console.log('starting pause');
+console.log(process.argv);
 
 var pargv = require('minimist')(process.argv.splice(2));
 
-var httpPort = pargv.p || 80;
+var httpPort = process.env.PORT || pargv.p || 80;
 var defaultDelay = pargv.d || 1000;
 var defaultContent = pargv.c || '';
 var defaultResponseHttpStatus = pargv.s || 202;
