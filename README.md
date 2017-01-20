@@ -1,4 +1,5 @@
-h1. Pause [![Build Status](https://travis-ci.org/jasonray/pause.svg?branch=master)](https://travis-ci.org/jasonray/pause)
+Pause [![Build Status](https://travis-ci.org/jasonray/pause.svg?branch=master)](https://travis-ci.org/jasonray/pause)
+-----
 
 Purpose
 =======
