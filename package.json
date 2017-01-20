@@ -4,6 +4,7 @@
   "description": "I often need a web service to simulate a remote resource that takes an arbitrary amount of time to execute. This is such a service",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"no test specified\""
   },
   "repository": {
