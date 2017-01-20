@@ -1,6 +1,6 @@
 var pargv = require('minimist')(process.argv.splice(2));
 
-var httpPort = pargv.p || 8888;
+var httpPort = pargv.p || 80;
 var defaultDelay = pargv.d || 1000;
 var defaultContent = pargv.c || '';
 var defaultResponseHttpStatus = pargv.s || 202;
