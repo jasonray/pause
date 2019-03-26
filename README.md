@@ -1,4 +1,4 @@
-# Pause [![Build Status](https://travis-ci.org/jasonray/pause.svg?branch=master)](https://travis-ci.org/jasonray/pause) [![Greenkeeper badge](https://badges.greenkeeper.io/jasonray/pause.svg)](https://greenkeeper.io/)
+# Pause [![Build Status](https://travis-ci.org/jasonray/pause.svg?branch=master)](https://travis-ci.org/jasonray/pause) [![Greenkeeper badge](https://badges.greenkeeper.io/jasonray/pause.svg)](https://greenkeeper.io/) [![Dependency badge](https://david-dm.org/jasonray/pause.svg)](https://david-dm.org/jasonray/pause)
 
 # Purpose
 I often need a mock web service to simulate a remote resource that takes an arbitrary amount of time to execute.  This is often used while performance testing to represent a remote web service.  This project provides such a mock.
