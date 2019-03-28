@@ -21,10 +21,10 @@ node app.js [options]
 ```
 
 ### Options
-   - `-p port` specify the port on which to listen
-   - `-d delay` specify the default duration, in milliseconds, for the service to wait before returning
-   - `-c content` specify the default content to use on the response http body
-   - `-s status` specify the default http status to use on the response
+- `-p port` specify the port on which to listen
+- `-d delay` specify the default duration, in milliseconds, for the service to wait before returning
+- `-c content` specify the default content to use on the response http body
+- `-s status` specify the default http status to use on the response
 
 ## Consume it
 A simple usage of it would be:
