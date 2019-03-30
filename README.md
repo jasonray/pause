@@ -3,7 +3,6 @@
 ## Purpose
 I often need a mock web service to simulate a remote resource that takes an arbitrary amount of time to execute.  This is often used while performance testing to represent a remote web service.  This project provides such a mock.
 
-
 ## Install it
 Install node:
 ```
