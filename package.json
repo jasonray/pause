@@ -17,7 +17,7 @@
     "url": "https://github.com/jasonray/pause/issues"
   },
   "dependencies": {
-    "express": "4.16.4",
+    "express": "4.17.0",
     "morgan": "1.9.1",
     "minimist": "1.2.0"
   }
